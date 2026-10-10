@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - payload-cache-data:/data
+
+volumes:
+  payload-cache-data:
